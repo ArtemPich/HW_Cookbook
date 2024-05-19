@@ -1,4 +1,5 @@
-def get_recipes(recipes_file='list_recipes.txt'):
+# Задача 1,2
+def get_recipes(recipes_file='recipes.txt'):
     with open(recipes_file, encoding='utf8') as file:
         cook_book = dict()
         for line in file:
@@ -22,7 +23,6 @@ def get_recipes(recipes_file='list_recipes.txt'):
             print("  {}: ".format(key))
             for ingredients in value:
                 print("    {}".format(ingredients))
-
 
 def get_shop_list_by_dishes(dishes, person_count):
     cook_book = {
